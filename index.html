@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Brazil XL - Treinando IAs de imagens brasileiras</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Brazil XL</h1>
+					<p>Treinando IAs de imagens brasileiras</p>
+					<small>Luciano Santa Brígida</small>
+				</section>
+				<!-- Breve histórico de geração de imagens -->
+				<section>
+					<h2>Histórico</h2>
+					<p><img src="https://www.researchgate.net/publication/363766150/figure/fig1/AS:11431281085804503@1663903343464/Timeline-of-text-to-image-generative-models.png" /></p>
+				</section>
+
+				<!-- Como funciona o Stable Diffusion -->
+				<section>
+					<section>
+						<h2>Como funciona o Stable Diffusion</h2>
+					</section>
+					<section>
+						<p>De forma bem resumida:</p>
+						<div>
+							<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-84-1024x381.png" /></p>
+						</div>
+					</section>
+					<section>
+						<p>O Stable Diffusion é uma técnica de aprendizado profundo que gera imagens realistas ao simular um processo de difusão. Ele começa com uma imagem inicial aleatória e, em seguida, aplica pequenas alterações a cada passo, guiadas por um modelo de aprendizado profundo, até que a imagem final seja alcançada.</p>
+					</section>
+				</section>
+
+				<!-- Problema de subrepresentação de certos termos e conceitos -->
+				<section>
+					<section>
+						<h2>Problema: sub-representação</h2>
+					</section>
+					<section>
+						<p>Eu vou tomar um tacacá</p>
+						<p><img src="https://placehold.jp/200x200.png" /></p>
+						<small>Antes do treinamento</small>
+					</section>
+					<section>
+						<p>Dançar, curtir, ficar de boa</p>
+						<p><img src="https://placehold.jp/200x200.png" /></p>
+						<small>Após o treinamento</small>
+					</section>
+					<section>
+						<p>Em muitos conjuntos de dados de treinamento, certos termos e conceitos podem ser sub-representados, levando a um viés no modelo treinado. Isso pode resultar em um desempenho inferior quando o modelo é usado para gerar imagens que incluem esses termos e conceitos sub-representados.</p>
+					</section>
+				</section>
+
+				<!-- O que é um LoRA -->
+				<section>
+					<section><h2>O que é um LoRA</h2></section>
+					<section>
+						<p>Stable Diffusion + LoRA + LoRA + LoRA...</p>
+						<div>
+							<p><img src="https://placehold.jp/200x200.png" /></p>
+						</div>
+					</section>
+					<section>
+						<p>LoRA, ou Localized Receptive-field Autoencoder, é uma técnica de aprendizado profundo que permite a um modelo aprender representações mais ricas e detalhadas de dados. Ele faz isso ao focar em pequenas regiões da entrada de cada vez, permitindo que o modelo capture detalhes finos que podem ser perdidos por outros métodos.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Por que treinar seu próprio modelo</h2>
+					</section>
+					<section>
+						<ul>
+							<li>Promoção da Diversidade Cultural</li>
+							<li>Influência Cultural</li>
+							<li>Política de Inclusão</li>
+							<li>Educação</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Como treinar um modelo LoRA usando Kohya_ss -->
+				<section>
+					<section><h2>Como treinar um modelo LoRA</h2></section>
+					<section>
+						<h3>Passo-a-Passo</h3>
+						<ul>
+							<li>Coleta de Dados</li>
+							<li>Legenda das imagens</li>
+							<li>Treinamento</li>
+							<li>Gerar imagens</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Coleta de Dados</h3>
+						<p>Escolha um conjunto diversificado de imagens</p>
+						<p><img src="https://placehold.jp/200x200.png" /></p>
+					</section>
+					<section>
+						<h3>Legenda das imagens</h3>
+						<p>Adicione uma legenda para cada imagem</p>
+						<p><img src="https://placehold.jp/200x200.png" /></p>
+					</section>
+					<section>
+						<h3>Treinamento</h3>
+						<ul>
+							<li>Defina o modelo</li>
+							<li>Defina as opções de treinamento</li>
+							<li>Realize o treinamento</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Treinamento</h3>
+						<p><img src="https://placehold.jp/200x200.png" /></p>
+					</section>
+					<section>
+						<h3>Gerar imagens</h3>
+						<p>Use o modelo para gerar imagens</p>
+						<p><img src="https://placehold.jp/200x200.png" /></p>
+					</section>
+				</section>
+
+				<!-- Demonstração de Resultados -->
+				<section>
+					<h2>Demonstração de Resultados</h2>
+					<p>Vamos ver como ficaram os modelos treinados.</p>
+				</section>
+
+				<!-- Agradecimento -->
+				<section>
+					<h2>Muito Obrigado!</h2>
+					<p>Quais suas dúvidas?</p>
+					<p>www.linkedin.com/in/lucianosb/</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
