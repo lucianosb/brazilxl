@@ -30,7 +30,7 @@
 				<!-- Breve histórico de geração de imagens -->
 				<section>
 					<h2>Histórico</h2>
-					<p><img src="https://www.researchgate.net/publication/363766150/figure/fig1/AS:11431281085804503@1663903343464/Timeline-of-text-to-image-generative-models.png" /></p>
+					<p><img src="img/Timeline-of-text-to-image-generative-models.png" /></p>
 				</section>
 
 				<!-- Como funciona o Stable Diffusion -->
@@ -39,15 +39,19 @@
 						<h2>Como funciona o Stable Diffusion</h2>
 					</section>
 					<section>
+						<p>Grafo de treinamento:</p>
+						<p><img src="img/latent-diffusion.png" /></p>
+					</section>
+					<section>
 						<p>De forma bem resumida:</p>
 						<div>
-							<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-84-1024x381.png" /></p>
+							<p><img src="img/denoise.webp" /></p>
 
 							<small>https://stable-diffusion-art.com/samplers/</small>
 						</div>
 					</section>
 					<section>
-						<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/cat_euler_15.gif" /></p>
+						<p><img src="img/cat_euler_15.webp" /></p>
 					</section>
 					<section>
 						<p>O Stable Diffusion é uma técnica de aprendizado profundo que gera imagens realistas ao simular um processo de difusão. Ele começa com uma imagem inicial aleatória e, em seguida, aplica pequenas alterações a cada passo, guiadas por um modelo de aprendizado profundo, até que a imagem final seja alcançada.</p>
@@ -70,7 +74,16 @@
 						<small>Após o treinamento</small>
 					</section>
 					<section>
+						<p>um modelo de IA é um zip probabilístico</p>
+						<p><img src="img/projector.png" height="350"/></p>
+					</section>
+					<section>
 						<p>Em muitos conjuntos de dados de treinamento, certos termos e conceitos podem ser sub-representados, levando a um viés no modelo treinado. Isso pode resultar em um desempenho inferior quando o modelo é usado para gerar imagens que incluem esses termos e conceitos sub-representados.</p>
+					</section>
+					<section>
+						<p>Demonstração de Vieses</p>
+						<p><img src="img/stable-bias.png" height="400"/></p>
+						<small>Stable Bias</small>
 					</section>
 				</section>
 
@@ -83,7 +96,7 @@
 						<small>Stable Diffusion + LoRA + LoRA + LoRA...</small>
 					</section>
 					<section>
-						<p>LoRA, ou Localized Receptive-field Autoencoder, é uma técnica de aprendizado profundo que permite a um modelo aprender representações mais ricas e detalhadas de dados. Ele faz isso ao focar em pequenas regiões da entrada de cada vez, permitindo que o modelo capture detalhes finos que podem ser perdidos por outros métodos.</p>
+						<p>LoRA, ou Low-Rank Adaptation, é uma técnica de aprendizado profundo que permite a um modelo aprender representações mais ricas e detalhadas de dados. Ele faz isso ao focar em pequenas regiões da entrada de cada vez, permitindo que o modelo capture detalhes finos que podem ser perdidos por outros métodos.</p>
 					</section>
 				</section>
 
@@ -116,7 +129,7 @@
 					</section>
 					<section>
 						<h3>Coleta de Dados</h3>
-						<p>Escolha um conjunto diversificado de imagens</p>
+						<p>Escolha um conjunto diversificado de 30+ imagens</p>
 						<p><img src="img/openverse.jpeg" /></p>
 						<small>https://openverse.org/</small>
 					</section>
@@ -124,6 +137,7 @@
 						<h3>Legenda das imagens</h3>
 						<p>Adicione uma legenda para cada imagem</p>
 						<p><img src="img/kohya_captions.png" height="400"/></p>
+						<small>legendagem com kohya_ss</small>
 					</section>
 					<section>
 						<h3>Treinamento</h3>
@@ -135,12 +149,15 @@
 					</section>
 					<section>
 						<h3>Treinamento</h3>
-						<p><img src="img/kohya_train.png" /></p>
+						<p>Tempo pode variar de alguns minutos a algumas horas</p>
+						<p><img src="img/kohya_train.png" height="400"/></p>
+						<small>Treinamento com kohya_ss</small>
 					</section>
 					<section>
 						<h3>Gerar imagens</h3>
 						<p>Use o modelo para gerar imagens</p>
 						<p><img src="img/workflow-tacaca.png" /></p>
+						<small>Inferência com Comfy UI</small>
 					</section>
 				</section>
 
@@ -162,6 +179,7 @@
 						<li><a href="https://www.youtube.com/watch?v=70H03cv57-o">Tutorial de Kohya_ss (em inglês)</a></li>
 						<li><a href="https://civitai.com/">Civitai</a></li>
 						<li><a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI</a></li>
+						<li><a href="https://huggingface.co/blog/lora">Artigo sobre LoRAs</a></li>
 						<li><a href="https://pinokio.computer/">pinokio.computer</a></li>
 					</ul>
 				</section>
