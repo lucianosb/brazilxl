@@ -1,0 +1,7 @@
+transformers
+diffusers
+gradio
+torch
+numpy<2.0
+peft
+spaces
